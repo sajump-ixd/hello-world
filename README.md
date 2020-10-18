@@ -1,1 +1,1 @@
-# hello-world: the logic of interaction // fall 2020
+# hello world: the logic of interaction // fall 2020
