@@ -37,6 +37,7 @@ function preload() {
   zero = loadImage("0.png");
 }
 
+let welcome = "Learn ASL! Press any letter or number to see the sign."
 
 function asl(img) {
   background(255);
@@ -44,8 +45,35 @@ function asl(img) {
   image(img, 0, 0, 700, 700);
 }
 
+let n=0; // moves img postition over for hello
+let w=0; // and for world
+
+function hello(img) {
+  imageMode(CORNER);
+  image(img, 90+n, 60, 100, 100);
+  n = n + 100;
+}
+
+function world(img) {
+  imageMode(CORNER);
+  image(img, 90+w, 160, 100, 100);
+  w = w + 100;
+}
+
 function setup() {
   createCanvas(700, 600);
+  textSize(24);
+  text(welcome, 60, 300, 690, 700);
+  hello(H);
+  hello(E);
+  hello(L);
+  hello(L);
+  hello(O);
+  world(W);
+  world(O);
+  world(R);
+  world(L);
+  world(D);
 }
 
 
